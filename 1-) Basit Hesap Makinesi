@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int a, b;
+    printf("Iki tam sayi giriniz:\n");
+    scanf("%d \n %d", &a, &b);
+    
+    
+        printf("iki sayinin toplami:%d\n\n", a+b);
+        printf("iki sayinin farki:%d\n\n", a-b);
+        printf("iki sayinin carpimi:%d\n\n", a*b);
+        
+        if(a < b){
+            printf("iki sayinin mutlak farki:%d\n\n", b-a);
+        }
+
+
+        if(a%b == 0){
+        printf("1. sayinin 2. sayiya bolumu: %d\n\n", a/b);
+    }
+    
+        else if (a%b != 0){
+        printf("1. sayinin 2. sayiya bolumu: %.2f\n\n", (float)a/b);
+    }
+
+
+    return 0;
+}
