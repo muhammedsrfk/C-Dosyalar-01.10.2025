@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char sesli[] = {'a','e','i','o','u','A','E','I','O','U'};
+
+char sessiz[] = {'b','c','d','f','g','h','j','k','l','m','n','p','r','s','t','q','w','x','v','y','z',
+                 'B','C','D','F','G','H','J','K','L','M','N','P','R','S','T','Q','W','X','V','Y','Z'};
+
+char harf_girisi;
+
+int main()
+{
+    printf("Ingilizce karakter kullanarak bir harf giriniz:\n");
+    scanf("%c", &harf_girisi);
+
+    int kontrol = 0;
+    for (int i = 0; i < sizeof(sesli)/sizeof(sesli[0]); i++){
+        if (harf_girisi == sesli[i]){
+            printf("Girdiginiz harf seslidir.\n");
+            kontrol = 1;
+            break;
+        }
+    }
+        if(!kontrol){
+            for (int i = 0; i < sizeof(sessiz)/sizeof(sessiz[0]); i++){
+                if (harf_girisi == sessiz [i]){
+                    printf("Girdiginiz harf sessizdir.\n");
+                    kontrol = 1;
+                    break;
+                }
+            }
+        }
+        if(!kontrol){
+            printf("Gecersiz veri girdiniz.\n");
+            return 0;
+        }
+
+
+
+
+    return 0;
+}
