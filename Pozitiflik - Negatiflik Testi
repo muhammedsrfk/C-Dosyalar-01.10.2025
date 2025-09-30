@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main()
+{
+    int sayi;
+    printf("Bir sayi giriniz\n");
+    scanf("%d", &sayi);
+
+    if (sayi > 0){
+        printf("Pozitif\n");
+    }
+    else if (sayi < 0){
+        printf("Negatif\n");
+    }
+
+    else if (sayi == 0){
+    printf("Sifir\n");
+    }
+
+    return 0;
+}
