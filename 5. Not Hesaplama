@@ -28,7 +28,7 @@ int main()
                 printf("Gecti. Ortalama: %f\n", ort);
                                                                       }
             else{
-                printf("Gecersiz not girdisi.\n");
+                printf("Gecersiz not girdisi. Tekrar giriniz.\n");
                 x--;
                 }
                                     }
