@@ -10,34 +10,34 @@ int x,y,z;
     printf("Karsilastirilacak olan 3 tam sayiyi giriniz:\n");
     scanf("%d %d %d",&x,&y,&z);
 
-    if(x >= y && y >= z){
+    if(z >= y && y >= x){
 
-        printf("%d >= %d >= %d",x,y,z);
-    }
-
-    else if(x >= z && z >= y){
-
-        printf("%d >= %d >= %d",x,z,y);
+        printf("%d <= %d <= %d",x,y,z);
     }
 
     else if(y >= z && z >= x){
 
-        printf("%d >= %d >= %d",y,z,x);
+        printf("%d <= %d <= %d",x,z,y);
     }
 
-    else if(y >= x && x >= z){
+    else if(x >= z && z >= y){
 
-        printf("%d >= %d >= %d",y,x,z);
+        printf("%d <= %d <= %d",y,z,x);
     }
 
     else if(z >= x && x >= y){
 
-        printf("%d >= %d >= %d",z,x,y);
+        printf("%d <= %d <= %d",y,x,z);
     }
 
-    else if(z >= y && y >= x){
+    else if(y >= x && x >= z){
 
-        printf("%d >= %d >= %d",z,y,x);
+        printf("%d <= %d <= %d",z,x,y);
+    }
+
+    else if(x >= y && y >= z){
+
+        printf("%d <= %d <= %d",z,y,x);
     }
 
 }
