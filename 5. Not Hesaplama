@@ -1,1 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
 
+float not1 = 0;
+float not2 = 0;
+float not3 = 0;
+float not4 = 0;
+
+int main()
+{
+        for (int x = 1; x =< 5 ; x++){
+            printf("%d. Ogrenci icin 1. Notu Giriniz: \n",x);
+            scanf("%f", &not1);
+            printf("2. Notu Giriniz: \n");
+            scanf("%f", &not2);
+            printf("3. Notu Giriniz: \n");
+            scanf("%f", &not3);
+            printf("4. Notu Giriniz: \n");
+            scanf("%f", &not4);
+
+            if (not1 =< 100 && not2 =< 100 && not3 =< 100 && not4 =< 100 ){
+
+            float ort = (not1+not2+not3+not4)/4;
+            if (ort < 50){
+                printf("Kaldi. Ortalama: %f\n",ort);
+                              }
+            else
+                printf("Gecti. Ortalama: %f\n", ort);
+                                                                      }
+            else{
+                printf("Gecersiz not girdisi.\n");
+                x--;
+                }
+                                    }
+
+
+
+}
